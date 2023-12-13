@@ -2,7 +2,9 @@
 
 Menggunakan OpenCV Python untuk melakukan deteksi QRCode.
 
-Repositori ini dibuat untuk memenuhi tugas Besar Mata Kuliah EL4125 Pengolahan Citra Digital
+Repositori ini dibuat untuk memenuhi tugas Besar Mata Kuliah EL4125 Pengolahan Citra Digital.
+
+Untuk melihat *implementasi algoritma*, pergi ke folder `pengembangan`
 
 **Anggota**
 
@@ -17,3 +19,7 @@ Repositori ini dibuat untuk memenuhi tugas Besar Mata Kuliah EL4125 Pengolahan C
 [PPT Presentasi](https://docs.google.com/presentation/d/1QgyVbHJYDaKuFzFAYUvRzN4ykth1HhrROXFHa08yMo4/edit#slide=id.g33a222761babc227_0)
 
 [Referensi Implementasi](https://github.com/MikhailGordeev/QR-Code-Extractor/tree/master)
+
+**Pengujian**
+
+![Foto Pengujian](./src/img/Hasil_pengujian_QRDetector.png)
