@@ -7,6 +7,8 @@ Nama File        : main.py
 Deskripsi        : main program sourcecode implementasi pendeteksian QRCode  
 '''
 
+printed = [] # QRCode yang sudah dicetak
+
 # Import library
 import cv2
 import qr_extractor as reader
@@ -23,13 +25,12 @@ while True:
     cv2.imshow("frame", frame)
 
     # menampilkan QRCode terbaca pada terminal 
-        # Mencetak hasil pembacaan QR codes di terminal
     for code in codes:
-        # print("QR Code:")
-        if (decode(code) != []):
+        # memastikan bahwa QR code dicetak tidak berulang
+        if ((decode(code) != []) and (decode(code)[0].data not in printed)):
             print(decode(code))
             print("")
-    #print(decode(codes))
+            printed.append(decode(code)[0].data)
 
     # Proses berhenti saat user menekan tombol `q`
     if cv2.waitKey(1) & 0xFF == ord('q'):
